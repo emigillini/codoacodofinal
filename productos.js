@@ -1,52 +1,31 @@
-export const productos = [
-    {
-      nombre: "Pizza Margarita",
-      descripcion: "Deliciosa pizza con queso mozzarella, tomate y albahaca.",
-      precio: 10,
-      imagen: "imagenes/margarita.jfif"
-    },
-    {
-      nombre: "Pizza Pepperoni",
-      descripcion: "Pizza con queso mozzarella y salame pepperoni.",
-      precio: 12,
-      imagen: "imagenes/salame.jfif"
-    },
-    {
-      nombre: "Pizza Hawaiana",
-      descripcion: "Pizza con queso mozzarella, jamón y anana.",
-      precio: 11,
-      imagen: "imagenes/primavera.jfif"
-    },
-    {
-      nombre: "Pizza especial",
-      descripcion: "Pizza con queso mozzarella , jamon y pimiento.",
-      precio: 12,
-      imagen: "imagenes/especial.jfif"
-    },
-    {
-      nombre: "Pizza Muzzarel",
-      descripcion: "Pizza con queso mozzarella.",
-      precio: 12,
-      imagen: "imagenes/muzza.jfif"
-    },
-    {
-      nombre: "Pizza Prosciutto",
-      descripcion: "Pizza con queso mozzarella y jamon cocido.",
-      precio: 12,
-      imagen: "imagenes/prosciutto.jfif"
-    },
-    {
-      nombre: "Pizza Romana",
-      descripcion: "Pizza con queso mozzarella estilo Roma.",
-      precio: 12,
-      imagen: "imagenes/romana.jfif"
-    },
-    {
-      nombre: "Pizza Margarita",
-      descripcion: "Deliciosa pizza con queso mozzarella, tomate y albahaca.",
-      precio: 10,
-      imagen: "imagenes/margarita.jfif"
-    }
+import { productos } from "./BaseDatos.js";
+
+const contenedorProductos = document.querySelector("#productos");
+
+function mostrarProductos() {
+  productos.forEach((producto) => {
+    const tarjeta = document.createElement("div");
+    tarjeta.classList.add("producto");
+
+    const imagen = document.createElement("img");
+    imagen.src = producto.imagen;
+    imagen.alt = producto.nombre;
+    tarjeta.appendChild(imagen);
+
+    const nombre = document.createElement("h3");
+    nombre.innerText = producto.nombre;
+    tarjeta.appendChild(nombre);
+
+    const descripcion = document.createElement("p");
+    descripcion.innerText = producto.descripcion;
+    tarjeta.appendChild(descripcion);
+
+    const precio = document.createElement("p");
+    precio.innerText = `$${producto.precio}`;
+    tarjeta.appendChild(precio);
+
     
-  ];
-  
+    contenedorProductos.appendChild(tarjeta);
+  });
+}
+mostrarProductos()
