@@ -15,17 +15,29 @@
     width: 200%;
   }
 }
-@keyframes rotate {from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}}
-
-@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
-  to {-webkit-transform: rotate(360deg);}}
-
-#body{
-border: 2px solid black;
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-.section1{
-    background-color: black;
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#body {
+  border: 2px solid black;
+}
+.section1 {
+  background-color: black;
 }
 .titulo {
   color: orange;
@@ -35,23 +47,21 @@ border: 2px solid black;
   margin: 0;
   padding: 0;
 }
-.subt{
-    color: aliceblue;
+.subt {
+  color: aliceblue;
 }
 
 .logo {
   width: 150px;
   height: 150px;
   animation-name: aparicion;
-animation-duration: 2s;
-
+  animation-duration: 2s;
 }
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: black;
-  
 }
 .link {
   color: orange;
@@ -84,14 +94,13 @@ animation-duration: 2s;
   justify-content: center;
   font-size: 35px;
   border: 7px double orange;
-  
 }
 .principal {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 60vh;
 }
-.sect0{
+.sect0 {
   background-color: black;
 }
 .sect1 {
@@ -107,38 +116,36 @@ animation-duration: 2s;
   align-content: center;
   gap: 2%;
 }
-.imgpizz{
-border: 2px solid black;
-box-shadow: 2px 2px 2px;
-width: 90%;
-max-width: 250px;
-max-height: 190;
-margin: 2px;
-animation-name: ampliacion;
-animation-duration: 3s;
-transform: rotate(2deg);
-animation-name: aparicion;
-animation-duration: 2s;
-
+.imgpizz {
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px;
+  width: 90%;
+  max-width: 250px;
+  max-height: 190;
+  margin: 2px;
+  animation-name: ampliacion;
+  animation-duration: 3s;
+  transform: rotate(2deg);
+  animation-name: aparicion;
+  animation-duration: 2s;
 }
-.imgsec1{
+.imgsec1 {
   border-radius: 50%;
   margin: 18px;
   -webkit-animation: 5s rotate linear infinite;
-    animation: 5s rotate linear infinite;
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    
+  animation: 5s rotate linear infinite;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
-.foot{
+.foot {
   background-color: black;
   border: 7px double orange;
 }
 
-marquee{
+marquee {
   color: orange;
 }
-.derechos{
+.derechos {
   color: orange;
 }
 footer .pie {
@@ -162,7 +169,6 @@ footer a:hover {
   flex-wrap: wrap;
   justify-content: center;
   background-color: orange;
- 
 }
 
 .producto {
@@ -197,7 +203,6 @@ footer a:hover {
 }
 
 .sectionn {
- 
   height: auto;
   border: 1px solid black;
   background-color: orange;
@@ -225,13 +230,15 @@ footer a:hover {
 }
 
 @keyframes mover {
-  from {transform: translateX(0)}
-  to {transform: translateX(300px)}
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(300px);
+  }
 }
 
-
 .sectionn p {
-
   text-align: center;
   font-size: 18px;
   padding: 20px;
@@ -244,15 +251,68 @@ footer a:hover {
   animation-duration: 6s;
 }
 
-.sectionn  h2 {
+.sectionn h2 {
   border: 2px solid black;
   text-align: center;
   font-size: 16px;
   padding: 20px;
   font-weight: bolder;
-color: whitesmoke;
+  color: whitesmoke;
   box-shadow: 10px 5px 5px black;
   background-color: black;
   opacity: 0.85;
 }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
 
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  background-color: #fff;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}

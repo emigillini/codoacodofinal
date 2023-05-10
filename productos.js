@@ -24,8 +24,7 @@ function mostrarProductos() {
     precio.innerText = `$${producto.precio}`;
     tarjeta.appendChild(precio);
 
-    
     contenedorProductos.appendChild(tarjeta);
   });
 }
-mostrarProductos()
+mostrarProductos();
