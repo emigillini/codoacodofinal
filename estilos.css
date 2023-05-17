@@ -164,43 +164,7 @@ footer a:hover {
   text-shadow: 7px 7px 3px red;
 }
 
-#productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: orange;
-}
 
-.producto {
-  width: 300px;
-  border: 1px solid whitesmoke;
-  margin: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  background-color: black;
-  color: orange;
-}
-
-.producto img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin: auto;
-  padding: 5px;
-  border: 1px solid whitesmoke;
-  margin-top: 7px;
-}
-
-.producto h3 {
-  margin: 10px;
-}
-
-.producto p {
-  margin: 5px;
-  font-weight: bold;
-}
 
 .sectionn {
   height: auto;
@@ -254,7 +218,7 @@ footer a:hover {
 .sectionn h2 {
   border: 2px solid black;
   text-align: center;
-  font-size: 16px;
+  font-size:25px;
   padding: 20px;
   font-weight: bolder;
   color: whitesmoke;
@@ -267,52 +231,3 @@ body {
   background-color: #f1f1f1;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-form {
-  background-color: #fff;
-  width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-input[type="submit"] {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-
-.error {
-  color: red;
-  margin-bottom: 10px;
-}
