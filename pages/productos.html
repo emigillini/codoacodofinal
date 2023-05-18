@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilos.css" />
-    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -15,50 +16,33 @@
     />
     <title>Pizzeria Pizzax</title>
   </head>
-  <body>
+  <body id="body">
     <header>
       <div class="header">
         <div>
           <img
             class="logo"
-            src="imagenes/hand-drawn-vector-pizza-logo-3123589.jpg"
+            src="/imagenes/hand-drawn-vector-pizza-logo-3123589.jpg"
             alt="logo-pizzeria"
           />
         </div>
         <nav>
           <a class="link" href="/index.html">HOME</a>
-          <a class="link" href="/productos.html">PRUDUCTOS</a>
-          <a class="link" href="/nosotros.html">NOSOTROS</a>
+          <a class="link" href="/pages/nosotros.html">NOSOTROS</a>
+          <a class="link" href="/pages/contacto.html">CONTACTO</a>
         </nav>
 
         <div>
           <img
             class="logo"
-            src="imagenes/hand-drawn-vector-pizza-logo-3123589.jpg"
+            src="/imagenes/hand-drawn-vector-pizza-logo-3123589.jpg"
             alt="logo-pizzeria"
           />
         </div>
       </div>
     </header>
 
-    
-    <h1>Deja tus datos y tu consulta</h1>
-
-    <form id="myForm" action="" method="post">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="phone">Teléfono:</label>
-      <input type="tel" id="phone" name="phone" required />
-
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message"></textarea>
-
-      <input type="submit" value="Enviar" />
-    </form>
+    <section id="productos"></section>
     <footer class="foot">
       <nav class="pie">
         <a
@@ -93,6 +77,6 @@
       <p class="derechos">© 2023 PIZZAX. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="contacto.js"></script>
+    <script src="/js/productos.js" type="module"></script>
   </body>
 </html>
