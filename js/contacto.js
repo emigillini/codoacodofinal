@@ -37,3 +37,26 @@ form.addEventListener("submit", function(event) {
     `Nombre: ${consulta.name}\nCorreo electrónico: ${consulta.email}\nTeléfono: ${consulta.phone}\nMensaje: ${consulta.message}`
   );
 });
+
+const chuckJokeElement = document.getElementById('chuck-joke');
+
+  fetch('https://api.chucknorris.io/jokes/random')
+  .then(response => response.json())
+  .then(data => {
+    const joke = data.value;
+    const jokeEncoded = encodeURIComponent(joke);
+    
+ 
+    fetch(`https://api.mymemory.translated.net/get?q=${jokeEncoded}&langpair=en|es`)
+      .then(response => response.json())
+      .then(translationData => {
+        const translatedJoke = translationData.responseData.translatedText;
+        chuckJokeElement.textContent = translatedJoke
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  })
+  .catch(error => {
+    console.log(error);
+  });

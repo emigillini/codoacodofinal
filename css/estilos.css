@@ -35,11 +35,14 @@
 
 
 #body {
-  border: 2px solid black;
+  border: 2px solid orange;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 .section1 {
   background-color: black;
+  
 }
 .titulo {
   color: orange;
@@ -64,6 +67,7 @@
   justify-content: space-around;
   align-items: center;
   background-color: black;
+  border: 2px solid orange;
 }
 .link {
   color: orange;
@@ -94,21 +98,25 @@
 .titulo {
   display: flex;
   justify-content: center;
-  font-size: 35px;
+  font-size: 25px;
   border: 7px double orange;
 }
 .principal {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 60vh;
+  
 }
 .sect0 {
   background-color: black;
+  
 }
 .sect1 {
   background-color: black;
   color: aliceblue;
   text-align: center;
+  background-image: url("https://us.123rf.com/450wm/altitudevisual/altitudevisual2212/altitudevisual221206329/195283845-hermosa-deliciosa-pizza-con-salsa-de-tomate-y-verduras-sobre-fondo-negro.jpg?ver=6");
+  background-size: cover;
 }
 .sect2 {
   background-color: orange;
@@ -117,6 +125,8 @@
   justify-content: center;
   align-content: center;
   gap: 2%;
+  background-image: url("https://static9.depositphotos.com/1672917/1142/i/950/depositphotos_11429271-stock-photo-pizza-oven.jpg");
+  background-size: cover;
 }
 .imgpizz {
   border: 2px solid black;
@@ -175,3 +185,113 @@ body {
   background-color: #f1f1f1;
 }
 
+@media (max-width: 768px) {
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .header {
+    align-items: center;
+  }
+
+  .link {
+    margin: 2vh;
+    font-size: 16px;
+  }
+
+  .Banner {
+    font-size: 16px;
+  }
+
+  #butbanner {
+    width: 60px;
+    height: 30px;
+  }
+
+  .titulo {
+    font-size: 25px;
+  }
+
+  .principal {
+    grid-template-columns: 100%;
+    gap: 10px;
+  }
+
+  .imgpizz {
+    max-width: 40%;
+    max-height: 1200px;
+    margin: 5px;
+  }
+
+  .imgsec1 {
+    margin: 10px;
+    -webkit-animation: none;
+    animation: none;
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+
+  footer .pie {
+    font-size: 20px;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+  }
+
+  marquee {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .link {
+    margin: 1vh;
+    font-size: 14px;
+  }
+
+  .Banner {
+    font-size: 10px;
+  }
+
+  #butbanner {
+    width: 60px;
+    height: 30px;
+  }
+
+  .titulo {
+    font-size: 15px;
+  }
+
+  .imgpizz {
+    max-width: 50%;
+    max-height: 100px;
+    margin: 5px;
+  }
+
+  .principal {
+    height: auto;
+    grid-template-columns: 100%;
+    gap: 5px;
+  }
+
+  .imgsec1 {
+    margin: 5px;
+  }
+
+  footer .pie {
+    font-size: 16px;
+    margin-top: 0.3cm;
+    margin-bottom: 0.3cm;
+  }
+
+  marquee {
+    font-size: 16px;
+  }
+}

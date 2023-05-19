@@ -1,3 +1,6 @@
+
+
+
 .sectionn {
     height: auto;
     border: 1px solid black;
@@ -6,6 +9,8 @@
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+    background-image: url("https://img.freepik.com/foto-gratis/vista-superior-pizza-pepperoni-salchichas-champinones-pimiento-verde-oliva-maiz-madera-negra_141793-2158.jpg?w=2000");
+  background-size: contain;
   }
   .sectionn img {
     object-fit: cover;

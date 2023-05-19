@@ -4,6 +4,8 @@
     justify-content: center;
     background-color: orange;
     padding: 15px;
+    background-image: url("https://images.hola.com/imagenes/cocina/recetas/20200120158493/pizza-casera-vegetal/0-770-783/pizza-vegetariana-t.jpg?tx=w_680");
+  background-size: contain;
   }
   
   .producto {

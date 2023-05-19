@@ -1,6 +1,11 @@
 
 body{
-border: 2px solid black;
+  border: 2px solid black;
+  background-image: url("https://assets.elgourmet.com/wp-content/uploads/2023/03/pizza_Mh3H4eanyBKEsStv1YclPWTf9OUqIi.png");
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  border: 2px solid orange;
 }
 
 h1 {
@@ -59,4 +64,31 @@ h1 {
     margin-bottom: 10px;
   }
 
-
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+      border: 2px solid black;
+      margin: 15px;
+      background-color: orange;
+    }
+    
+    form {
+      width: 70%;
+      font-size: 15px;
+    }
+  }
+  .chisContainer{
+    background-color: black;
+    padding: 5px;
+  }
+  .titChis{
+    color: orange;
+    text-align: center;
+  
+  }
+  .chiste {
+    font-size: 20px;
+    font-style: italic;
+    color: orange;
+    text-align: center;
+  }
