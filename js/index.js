@@ -6,5 +6,4 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("click", () => {
   let bot = document.getElementById("banner");
   bot.remove();
-  //bot.style.display = "none";
 });

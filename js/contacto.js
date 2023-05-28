@@ -1,10 +1,9 @@
-
 var consultas = [];
 
 var form = document.getElementById("myForm");
 
-form.addEventListener("submit", function(event) {
-  event.preventDefault(); 
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
   var name = document.getElementById("name").value;
   var email = document.getElementById("email").value;
@@ -13,20 +12,20 @@ form.addEventListener("submit", function(event) {
 
   if (name === "" || email === "" || phone === "") {
     alert("Por favor, completa los campos obligatorios");
-    return; 
+    return;
   }
 
   var emailRegex = /^\S+@\S+\.\S+$/;
   if (!emailRegex.test(email)) {
     alert("Por favor, ingresa un correo electrónico válido");
-    return; 
+    return;
   }
 
   var consulta = {
     name: name,
     email: email,
     phone: phone,
-    message: message
+    message: message,
   };
 
   consultas.push(consulta);
@@ -38,25 +37,26 @@ form.addEventListener("submit", function(event) {
   );
 });
 
-const chuckJokeElement = document.getElementById('chuck-joke');
+const chuckJokeElement = document.getElementById("chuck-joke");
 
-  fetch('https://api.chucknorris.io/jokes/random')
-  .then(response => response.json())
-  .then(data => {
+fetch("https://api.chucknorris.io/jokes/random")
+  .then((response) => response.json())
+  .then((data) => {
     const joke = data.value;
     const jokeEncoded = encodeURIComponent(joke);
-    
- 
-    fetch(`https://api.mymemory.translated.net/get?q=${jokeEncoded}&langpair=en|es`)
-      .then(response => response.json())
-      .then(translationData => {
+
+    fetch(
+      `https://api.mymemory.translated.net/get?q=${jokeEncoded}&langpair=en|es`
+    )
+      .then((response) => response.json())
+      .then((translationData) => {
         const translatedJoke = translationData.responseData.translatedText;
-        chuckJokeElement.textContent = translatedJoke
+        chuckJokeElement.textContent = translatedJoke;
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
       });
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

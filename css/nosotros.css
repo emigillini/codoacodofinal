@@ -1,139 +1,129 @@
-
-
-
 .sectionn {
-    height: auto;
-    border: 1px solid black;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    background-image: url("https://img.freepik.com/foto-gratis/vista-superior-pizza-pepperoni-salchichas-champinones-pimiento-verde-oliva-maiz-madera-negra_141793-2158.jpg?w=2000");
+  height: auto;
+  border: 1px solid black;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-image: url("https://img.freepik.com/foto-gratis/vista-superior-pizza-pepperoni-salchichas-champinones-pimiento-verde-oliva-maiz-madera-negra_141793-2158.jpg?w=2000");
   background-size: contain;
+}
+.sectionn img {
+  object-fit: cover;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 3%;
+  border: 2px solid black;
+  box-shadow: 10px 5px 5px black;
+  filter: grayscale(0.5);
+  padding: 30px;
+  align-self: center;
+  animation-name: mover;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin: 20px;
+}
+
+@keyframes mover {
+  from {
+    transform: translateX(0);
   }
-  .sectionn img {
-    object-fit: cover;
-    background-color: black;
-    width: 200px;
-    height: 200px;
-    border-radius: 3%;
-    border: 2px solid black;
-    box-shadow: 10px 5px 5px black;
-    filter: grayscale(0.5);
-    padding: 30px;
-    align-self: center;
-    animation-name: mover;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    margin: 20px;
+  to {
+    transform: translateX(300px);
   }
-  
-  @keyframes mover {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(300px);
-    }
-  }
-  
-  .sectionn p {
-    text-align: center;
-    font-size: 18px;
-    padding: 20px;
-    font-weight: 900;
-    color: black;
-    box-shadow: 10px 5px 5px black;
-    background-color: silver;
-    opacity: 0.8;
-    animation-name: aparicion;
-    animation-duration: 6s;
-  }
-  
-  .sectionn h2 {
-    border: 2px solid black;
-    text-align: center;
-    font-size:25px;
-    padding: 20px;
-    font-weight: bolder;
-    color: whitesmoke;
-    box-shadow: 10px 5px 5px black;
-    background-color: black;
-    opacity: 0.85;
-  }
+}
+
+.sectionn p {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  font-weight: 900;
+  color: black;
+  box-shadow: 10px 5px 5px black;
+  background-color: silver;
+  opacity: 0.8;
+  animation-name: aparicion;
+  animation-duration: 6s;
+}
+
+.sectionn h2 {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  font-weight: bolder;
+  color: whitesmoke;
+  box-shadow: 10px 5px 5px black;
+  background-color: black;
+  opacity: 0.85;
+}
 
 .iframe-container {
-    position: relative;
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-   
-  }
-  
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  sectionn div img {
-    display: none;
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+sectionn div img {
+  display: none;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
-   
-    .sectionn p {
-        font-size: 18px;
-    }
-    .sectionn h2 {
-        font-size: 20px;
-    }
-    .sectionn div img {
-
-        max-width: 90vh;
-        max-height: 40vh;
-        align-self: center;
-    
-    }
-    .iframe-container {
-        width: 100%;
-        padding-bottom: 56.25%; 
-    }
-    .sectionn img {
-        animation: none;
-    }
-    .log2{
-        display: none;
-    }
+  .sectionn p {
+    font-size: 18px;
+  }
+  .sectionn h2 {
+    font-size: 20px;
+  }
+  .sectionn div img {
+    max-width: 90vh;
+    max-height: 40vh;
+    align-self: center;
+  }
+  .iframe-container {
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+  .sectionn img {
+    animation: none;
+  }
+  .log2 {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
-    .sectionn p {
-        font-size: 12px;
-    }
-    .sectionn h2 {
-        font-size: 15px;
-    }
-    .sectionn div img {
-     
-        max-width: 40vh;
-        max-height: 20vh;
-        
-    
-    }
-    .iframe-container {
-        display: none;
-    }
-    .sectionn img {
-        animation: none;
-    }
-    .log2{
-        display: none;
-    }
+  .sectionn p {
+    font-size: 12px;
+  }
+  .sectionn h2 {
+    font-size: 15px;
+  }
+  .sectionn div img {
+    max-width: 40vh;
+    max-height: 20vh;
+  }
+  .iframe-container {
+    display: none;
+  }
+  .sectionn img {
+    animation: none;
+  }
+  .log2 {
+    display: none;
+  }
 }
